@@ -1,6 +1,6 @@
 // compress: true
 
-@import "vars";
+@import "vars/vars.less";
 
 html {
 	font-size: 15px;
@@ -12,3 +12,15 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1rem;
 }
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+// Blocks
+@import "blocks/container.less";
+@import "blocks/header.less";
+@import "blocks/user.less";
+@import "blocks/intro.less";
