@@ -3,11 +3,23 @@
 .contact {
 	display: flex;
 	background: url("https://place-hold.it/480x700") right center no-repeat;
+
+	@media @tablet {
+		background: none;
+	}
 }
 
 .contact__left {
 	width: 47%;
 	padding: 2rem;
+
+	@media @tablet {
+		width: 90%;
+	}
+
+	@media @mobile-sm {
+		width: 100%;
+	}
 }
 
 .modal__subtitle {

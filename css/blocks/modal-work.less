@@ -2,6 +2,12 @@
 
 .modal-work {
 	display: flex;
+
+	@media @tablet {
+		flex-wrap: wrap;
+		height: auto;
+	}
+
 }
 
 .modal-work__preview {
@@ -9,6 +15,13 @@
 	overflow: hidden;
 
 	position: relative;
+
+	@media @tablet {
+		width: 100%;
+		overflow: visible;
+
+		height: 250px;
+	}
 }
 
 .modal-work__photo {
@@ -24,6 +37,12 @@
 	width: 35%;
 	padding: 3.4rem 6.6rem 1rem 1.73rem;
 	position: relative;
+
+	@media @tablet {
+		width: 100%;
+		padding: 1rem;
+	}
+
 }
 
 .modal-work__header {
