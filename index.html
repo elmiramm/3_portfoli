@@ -421,7 +421,13 @@
 
 			<div class="modal-work">
 				<div class="modal-work__preview">
-					<img class="modal-work__photo" src="https://place-hold.it/790x780" alt="">
+
+					<div data-slider="slick">
+						<div><img class="modal-work__photo" src="https://place-hold.it/790x780" alt=""></div>
+						<div><img class="modal-work__photo" src="https://place-hold.it/790x780/333" alt=""></div>
+					</div>
+
+
 				</div>
 				<div class="modal-work__content">
 					<div class="modal-work__header">
@@ -447,10 +453,10 @@
 					</div>
 
 					<div class="modal-work__footer">
-						<button class="modal-work__btn modal-work__btn--prev" type="button">
+						<button class="modal-work__btn modal-work__btn--prev slickprev" type="button">
 							<img src="images/icons/previous.svg" alt="Previous" height="12">
 							Previous</button>
-						<button class="modal-work__btn modal-work__btn--next" type="button">
+						<button class="modal-work__btn modal-work__btn--next slicknext" type="button">
 							Next
 							<img src="images/icons/next.svg" alt="Next" height="12"></button>
 					</div>
@@ -688,7 +694,8 @@
 		</div>
 	</div>
 
-	<script src="script.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 
 </html>
