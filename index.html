@@ -42,7 +42,7 @@
 					<a class="nav__link" href="#">About Me</a>
 					<a class="nav__link" href="#">Blog</a>
 					<a class="nav__link" href="#">Contact</a>
-					<a class="nav__link nav__link--btn " href="#">Hire Me</a>
+					<a class="nav__link nav__link--btn " href="#" data-modal="#modal_hire_me">Hire Me</a>
 				</nav>
 
 			</div>
@@ -78,8 +78,8 @@
 						</a>
 					</div>
 
-					<a class="btn" href="#">HIRE ME</a>
-					<button class="btn" type="button">SEE MY RESUME </button>
+					<a class="btn" href="#" data-modal="#modal_hire_me">HIRE ME</a>
+					<button class="btn" type="button" data-modal="#modal_resume">SEE MY RESUME </button>
 				</div>
 
 				<img class="intro__photo" src="images/intro-photo.png" alt="My Photo">
@@ -99,7 +99,7 @@
 
 			<div class="portfolio">
 				<div class="portfolio__col" data-cat="app">
-					<div class="work">
+					<div class="work" data-modal="#modal_project_1">
 						<img class="work__img" src="https://place-hold.it/370x300" alt="Image">
 						<div class="work__content">
 							<div class="work__cat">CATEGORY: app</div>
@@ -251,8 +251,8 @@
 							orci
 							luctus et ultrices posuere cubilia Curae;</p>
 					</div>
-					<a class="btn" href="#">HIRE ME</a>
-					<button class="btn" type="button">SEE MY RESUME </button>
+					<a class="btn" href="#" data-modal="#modal_hire_me">HIRE ME</a>
+					<button class="btn" type="button" data-modal="#modal_resume">SEE MY RESUME </button>
 				</div>
 			</div>
 		</div>
@@ -405,17 +405,17 @@
 					<a class="footer__nav-link" href="#">About Me</a>
 					<a class="footer__nav-link" href="#">Blog</a>
 					<a class="footer__nav-link" href="#">Contact</a>
-					<a class="footer__nav-link footer__nav-link--btn" href="#">Hire Me</a>
+					<a class="footer__nav-link footer__nav-link--btn" href="#" data-modal="#modal_hire_me">Hire Me</a>
 				</nav>
 			</div>
 
 		</div>
 	</footer>
 
-	<div class="modal" style="display: none;">
+	<div class="modal" id="modal_project_1">
 		<div class="modal__dialog">
 
-			<button class="modal__close" type="button">
+			<button class="modal__close" type="button" data-close>
 				<img src="images/icons/modal-close.svg" alt="close button">
 			</button>
 
@@ -461,10 +461,10 @@
 		</div>
 	</div>
 
-	<div class="modal" style="display: none;">
+	<div class="modal" id="modal_resume">
 		<div class="modal__dialog">
 
-			<button class="modal__close" type="button">
+			<button class="modal__close" type="button" data-close>
 				<img src="images/icons/modal-close.svg" alt="close button">
 			</button>
 
@@ -635,10 +635,10 @@
 
 	</div>
 
-	<div class="modal" style="display: none;">
+	<div class="modal" id="modal_hire_me">
 		<div class="modal__dialog modal__dialog--sm ">
 
-			<button class="modal__close" type="button">
+			<button class="modal__close" type="button" data-close>
 				<img src="images/icons/modal-close.svg" alt="close button">
 			</button>
 
